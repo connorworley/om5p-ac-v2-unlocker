@@ -6,4 +6,4 @@ ADD . /src
 WORKDIR /src
 RUN make TOOLCHAIN_DIR=/opt/openwrt-sdk-19.07.8-ar71xx-generic_gcc-7.5.0_musl.Linux-x86_64/staging_dir/toolchain-mips_24kc_gcc-7.5.0_musl
 RUN chown nobody output/*
-CMD atftpd --daemon --no-fork --logfile=/dev/tty --verbose=7 --trace --bind-address 0.0.0.0 /src/output
+CMD atftpd --daemon --no-fork --logfile=/dev/tty --verbose=6 --bind-address 0.0.0.0 /src/output
